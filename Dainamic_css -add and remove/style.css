@@ -1,0 +1,16 @@
+.css_style{
+    color: red;
+    font-size: 40px;
+}
+.button1{
+    background-color: green;
+    padding: 7px 10px;
+    border: none;
+    color: white;
+}
+.button2{
+    background-color: red;
+    padding: 7px 10px;
+    border: none;
+    color: white;
+}
