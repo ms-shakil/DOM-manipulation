@@ -33,3 +33,31 @@ let items = document.getElementsByClassName("item")
 for(let i=0;i<items.length;i++){
     items[i].style.color = "green"
 }
+
+const g = document.querySelector(".grandparent")
+// const p = g.children 
+// const c = p[0].children
+                     // if we do under comment line . we can't to do lne 38 and 39
+const c = g.querySelectorAll('.child')
+for(let i =0; i<c.length;i++){
+    c[i].style.color ="blue"
+}
+
+
+
+// creat element
+
+// const divElement = document.createElement("div")
+// divElement.className = "red"
+// divElement.setAttribute("id","red")
+// divElement.setAttribute("title","red div")
+// g.insertBefore(divElement,p)
+
+//evan
+let btn = document.querySelector(".evan_")
+
+let data = document.querySelector(".evan_p")
+
+btn.addEventListener("click",(event)=>{
+    data.innerHTML = "hei ki obsta"
+})
