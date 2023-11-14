@@ -1,0 +1,38 @@
+.header{
+    text-align: center;
+}
+.form_area{
+    margin: 0% 20%;
+    border:none;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(196, 189, 189);
+    border: 1px solid gray;
+}
+.Box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px  ;
+}
+.items{
+    list-style-type: none;
+}
+#addTask{
+    color: white;
+    background: green;
+    padding: 4px 9px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+#deleteTask{
+    color: white;
+    background: red;
+    padding: 4px 15px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 15px;
+
+}
