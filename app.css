@@ -1,0 +1,12 @@
+.container{
+    text-align: center;
+    margin-top: 20%;
+    border: 1px solid gray;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.list-item{
+     display: block;
+     margin-bottom: 10px;
+
+}
