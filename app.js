@@ -125,3 +125,105 @@ function audioPlay(text){
          break;   
    }
 }
+
+
+// from heandling
+
+let form =document.querySelector("form")
+let name = form.querySelector("div #name")
+let email = form.querySelector("div #email")
+let password = form .querySelector("div #password")
+
+
+form.addEventListener("submit",fromHandle)
+
+function fromHandle(e){
+   e.preventDefault()
+   const userInfo={
+            name :name.value,
+            email: email.value,
+            password:password.value
+   } 
+   console.log(userInfo)
+   name.value=""
+   email.value =""
+   password.value = ""
+}
+
+
+/////////
+console.clear()
+console.log(window.location)
+
+let location_div = document.querySelector(".location_div")
+let p1 = location_div.children[0]
+p1.textContent =location.href
+
+let p2 = location_div.children[1]
+p2.textContent =location.protocol
+
+let p3 = location_div.children[2]
+p3.textContent =location.hostname
+
+let p4 = location_div.children[3]
+p4.textContent =location.port
+
+let face =document.querySelector("#facebook")
+face.addEventListener("click",function(){
+    location.assign("https://www.facebook.com")
+})
+
+//popup box
+
+function deleteSomthing(){
+    let value = confirm("Do you want ot delete?")
+    if(value){
+        console.log("delete")
+    }else{
+        console.log("not delete")
+    }
+}
+deleteSomthing()
+
+
+//promt
+
+function wellcome(){
+    let h1=document.createElement("h1")
+    let text 
+    let name =prompt("Enter Your name:")
+    if(name == null || name ==""){
+        text ="no name found"
+    }else{
+        text = name
+    }
+    var textNode = document.createTextNode(text)
+    h1.appendChild(textNode)
+    document.body.appendChild(h1)
+}
+wellcome()
+
+
+// time out
+let save = document.querySelector(".save_btn")
+let message = document.querySelector(".message")
+let message2 = document.querySelector(".message2")
+save.addEventListener("click", saveUse)
+function saveUse(){
+    message.textContent ="User Registration is successful"
+    setTimeout(()=>{
+        message.textContent =""
+    },2000)
+}
+
+save.addEventListener("click",myFun)
+function myFun(){
+    let count =1
+    message2.textContent =count
+    setInterval(() => {
+        count++
+        message2.textContent =count
+
+    }, 1000);
+
+}
