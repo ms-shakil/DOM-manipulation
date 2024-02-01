@@ -57,3 +57,23 @@ function PrevFun(){
     }
     imgTag.src=img_arr[count]
    }
+
+
+   // css add remvoe
+
+let heading = document.querySelector("#add_css")
+function AddCss(){
+   heading.classList.add("text_style")
+}
+
+function RemoveCss(){
+   heading.classList.remove("text_style")
+}
+let learnJs =document.querySelector(".learn_js")
+learnJs.addEventListener("mouseover",function(){
+      learnJs.classList.add("text_style")
+})
+
+learnJs.addEventListener("mouseout",function(){
+   learnJs.classList.remove("text_style")
+})
